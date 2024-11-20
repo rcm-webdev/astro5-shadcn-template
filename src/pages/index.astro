@@ -1,165 +1,180 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Chart } from "../components/Chart";
+
+import Bento from "../components/Bento";
 ---
 
-<Layout title="Astro + shadcn/ui">
-	<section class="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
-		<div class="max-w-[64rem] flex flex-col items-center gap-4 text-center mx-auto">
-			<h1
-				class="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
-			>
-				Build beautiful websites with Astro 5 and shadcn/ui
-			</h1>
-			<p
-				class="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8"
-			>
-				A beautiful, modern website template built with Astro and
-				shadcn/ui. Featuring dark mode, responsive design, and great
-				typography.
-			</p>
-			<div class="space-x-4">
-				<a
-					href="https://ui.shadcn.com"
-					class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
-				>
-					Documentation
-				</a>
-				<a
-					href="https://github.com/agentc-app/astro-shadcn"
-					class="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
-				>
-					GitHub
-				</a>
-			</div>
-		</div>
-	</section>
+<Layout title="Little Noodle">
+  <section class="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+    <div
+      class="max-w-[64rem] flex flex-col items-center gap-4 text-center mx-auto"
+    >
+      <h1 class="font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
+        <span
+          class="text-transparent bg-clip-text bg-gradient-to-r from-[#f12711] via-[#f5af19] to-[#f5af19]"
+          >Asian Fusion</span
+        > meets Spokane's Charm
+      </h1>
+      <p
+        class="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8"
+      >
+        Discover a culinary adventure at <span class="font-bold">
+          Little Noodle</span
+        >, nestled in Spokane's vibrant Garland District. Our menu features an
+        innovative fusion of Asian-inspired dishes, from our signature pho and
+        creative pho-ritos to delectable udon kimchi and kalbi ribs
+      </p>
+      <div class="space-x-4">
+        <a
+          href="https://ui.shadcn.com"
+          class="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-2xl font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
+        >
+          Menu
+        </a>
+        <a
+          href="https://github.com/agentc-app/astro-shadcn"
+          class="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-2xl font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground"
+        >
+          Hours
+        </a>
+      </div>
+    </div>
+  </section>
 
-	<section class="space-y-6 py-8 md:py-12 lg:py-24">
-		<Chart client:load />
-	</section>
+  <section class="space-y-6 py-8 md:py-12 lg:py-24">
+    <Bento client:load />
+  </section>
 
-	<section class="space-y-6 py-8 md:py-12 lg:py-24">
-		<div class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-			<p
-				class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-			>
-				Optimized for the best possible performance and accessibility
-			</p>
-		</div>
-		<div class="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2 md:grid-cols-4 items-start">
-			<div
-				class="relative overflow-hidden rounded-lg border bg-background p-2"
-			>
-				<div
-					class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="h-12 w-12 mb-4 text-green-500"
-						><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg
-					>
-					<div class="space-y-2">
-						<h3 class="font-bold text-2xl">100</h3>
-						<p class="text-sm text-muted-foreground">Performance</p>
-					</div>
-				</div>
-			</div>
+  <section
+    class="bg-white h-full w-full rounded-3xl space-y-6 mx-auto py-8 md:py-12 lg:py-24"
+  >
+  </section>
 
-			<div
-				class="relative overflow-hidden rounded-lg border bg-background p-2"
-			>
-				<div
-					class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="h-12 w-12 mb-4 text-green-500"
-						><circle cx="12" cy="12" r="10"></circle><path
-							d="m9 12 2 2 4-4"></path></svg
-					>
-					<div class="space-y-2">
-						<h3 class="font-bold text-2xl">100</h3>
-						<p class="text-sm text-muted-foreground">
-							Accessibility
-						</p>
-					</div>
-				</div>
-			</div>
+  <section
+    class="bg-white h-full w-full rounded-3xl space-y-6 mx-auto py-8 md:py-12 lg:py-24 mt-8"
+  >
+  </section>
 
-			<div
-				class="relative overflow-hidden rounded-lg border bg-background p-2"
-			>
-				<div
-					class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="h-12 w-12 mb-4 text-green-500"
-						><path
-							d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"
-						></path></svg
-					>
-					<div class="space-y-2">
-						<h3 class="font-bold text-2xl">100</h3>
-						<p class="text-sm text-muted-foreground">
-							Best Practices
-						</p>
-					</div>
-				</div>
-			</div>
+  <section class="space-y-6 py-8 md:py-12 lg:py-24">
+    <div
+      class="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center"
+    >
+      <p
+        class="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+      >
+        *Optimized in serving you the best possible experience.
+      </p>
+    </div>
+    <div
+      class="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2 md:grid-cols-4 items-start"
+    >
+      <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+        <div
+          class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="h-12 w-12 mb-4 text-[#f5af19]"
+          >
+            <path
+              fill="currentColor"
+              d="m8.73 18.39l1.27.5V20h4v-1.11l1.27-.5c2.16-.85 3.74-2.47 4.4-4.39H4.34c.65 1.92 2.24 3.54 4.39 4.39"
+              opacity="0.3"></path>
+            <path
+              fill="currentColor"
+              d="M22 3.51V2L4 3.99V12H2c0 3.69 2.47 6.86 6 8.25V22h8v-1.75c3.53-1.39 6-4.56 6-8.25H10.5V8H22V6.5H10.5V4.78zM8 5.06l1-.11V6.5H8zM8 8h1v4H8zM5.5 5.34l1-.11V6.5h-1zM5.5 8h1v4h-1zm14.16 6c-.66 1.92-2.24 3.54-4.4 4.39l-1.26.5V20h-4v-1.11l-1.27-.5c-2.16-.85-3.74-2.47-4.4-4.39z"
+            ></path>
+          </svg>
 
-			<div
-				class="relative overflow-hidden rounded-lg border bg-background p-2"
-			>
-				<div
-					class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
-				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="2"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="h-12 w-12 mb-4 text-green-500"
-						><path
-							d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"
-						></path><line x1="4" y1="22" x2="4" y2="15"></line></svg
-					>
-					<div class="space-y-2">
-						<h3 class="font-bold text-2xl">100</h3>
-						<p class="text-sm text-muted-foreground">SEO</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+          <div class="space-y-2">
+            <h3 class="font-bold text-2xl">100</h3>
+            <p class="text-sm text-muted-foreground">Ramen Goodness</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+        <div
+          class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            class="h-12 w-12 mb-4 text-[#f5af19]"
+          >
+            <path
+              fill="currentColor"
+              d="M14.12 17c-.73 1.78-2.43 3-4.37 3s-3.67-1.23-4.43-3h8.78"
+              opacity="0.3"></path>
+            <path
+              fill="currentColor"
+              d="M6.4 7c-.34.55-.4.97-.4 1.38C6 9.15 7 11 7 12c0 .95-.4 1.5-.4 1.5H5.1s.4-.55.4-1.5c0-1-1-2.85-1-3.62c0-.41.06-.83.4-1.38zm5 0c-.34.55-.4.97-.4 1.38c0 .77 1 2.62 1 3.62c0 .95-.4 1.5-.4 1.5h1.5s.4-.55.4-1.5c0-1-1-2.85-1-3.62c0-.41.06-.83.4-1.38zM8.15 7c-.34.55-.4.97-.4 1.38c0 .77 1 2.63 1 3.62c0 .95-.4 1.5-.4 1.5h1.5s.4-.55.4-1.5c0-1-1-2.85-1-3.62c0-.41.06-.83.4-1.38zM18.6 2c-1.54 0-2.81 1.16-2.98 2.65L14.53 15H4.01c-.6 0-1.09.53-1 1.13C3.53 19.46 6.39 22 9.75 22c3.48 0 6.34-2.73 6.71-6.23L17.61 4.9c.05-.51.47-.9.99-.9c.55 0 1 .45 1 1c0 .3-.1 1.25-.1 1.25l1.97.25s.13-1.06.13-1.5c0-1.65-1.35-3-3-3M9.75 20c-1.94 0-3.67-1.23-4.43-3h8.79c-.72 1.78-2.42 3-4.36 3"
+            ></path>
+          </svg>
+          <div class="space-y-2">
+            <h3 class="font-bold text-2xl">100</h3>
+            <p class="text-sm text-muted-foreground">Pho Goodness</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+        <div
+          class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            class="h-12 w-12 mb-4 text-[#f5af19]"
+          >
+            <path
+              fill="currentColor"
+              d="M17.07 8.93c-2.55-.39-4.57-2.41-4.99-4.94C6.73 3.82 4 8.69 4 12c0 4.41 3.59 8 8 8c4.06 0 7.7-3.14 7.98-7.45a5.03 5.03 0 0 1-2.91-3.62M8.5 15c-.83 0-1.5-.67-1.5-1.5S7.67 12 8.5 12s1.5.67 1.5 1.5S9.33 15 8.5 15m2-5C9.67 10 9 9.33 9 8.5S9.67 7 10.5 7s1.5.67 1.5 1.5s-.67 1.5-1.5 1.5m4.5 6c-.55 0-1-.45-1-1s.45-1 1-1s1 .45 1 1s-.45 1-1 1"
+              opacity="0.3"></path>
+            <circle cx="10.5" cy="8.5" r="1.5" fill="currentColor"></circle>
+            <circle cx="8.5" cy="13.5" r="1.5" fill="currentColor"></circle>
+            <circle cx="15" cy="15" r="1" fill="currentColor"></circle>
+            <path
+              fill="currentColor"
+              d="M21.95 10.99c-1.79-.03-3.7-1.95-2.68-4.22c-2.97 1-5.78-1.59-5.19-4.56C7.1.74 2 6.41 2 12c0 5.52 4.48 10 10 10c5.89 0 10.54-5.08 9.95-11.01M12 20c-4.41 0-8-3.59-8-8c0-3.31 2.73-8.18 8.08-8.02c.42 2.54 2.44 4.56 4.99 4.94c.07.36.52 2.55 2.92 3.63C19.7 16.86 16.06 20 12 20"
+            ></path>
+          </svg>
+          <div class="space-y-2">
+            <h3 class="font-bold text-2xl">100</h3>
+            <p class="text-sm text-muted-foreground">Sweet treat</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative overflow-hidden rounded-lg border bg-background p-2">
+        <div
+          class="flex h-[150px] flex-col items-center justify-center rounded-md p-6 text-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            class="h-12 w-12 mb-4 text-[#f5af19]"
+          >
+            <path
+              fill="currentColor"
+              d="m8.1 13.34l2.83-2.83L3.91 3.5a4.01 4.01 0 0 0 0 5.66zm12.05-3.19c1.91-1.91 2.28-4.65.81-6.12c-1.46-1.46-4.2-1.1-6.12.81c-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88l1.41-1.41L13.41 13l1.47-1.47c1.53.71 3.68.21 5.27-1.38"
+            ></path>
+          </svg>
+          <div class="space-y-2">
+            <h3 class="font-bold text-2xl">100</h3>
+            <p class="text-sm text-muted-foreground">SEO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
