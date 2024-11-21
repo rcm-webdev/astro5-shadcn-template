@@ -4,25 +4,22 @@ const images = [
   { id: 2, src: "/food/noodle-2.jpeg", alt: "Noodle dish 2" },
   { id: 3, src: "/food/noodle-3.jpg", alt: "Noodle dish 3" },
   { id: 4, src: "/food/noodle-2.jpeg", alt: "Noodle dish 2" },
-  { id: 5, src: "/food/noodle-2.jpeg", alt: "Noodle dish 2" },
-  { id: 6, src: "/food/noodle-3.jpg", alt: "Noodle dish 3" },
-  { id: 7, src: "/food/noodle-3.jpg", alt: "Noodle dish 3" },
-  { id: 8, src: "/food/noodle-3.jpg", alt: "Noodle dish 3" },
-  { id: 9, src: "/food/noodle-3.jpg", alt: "Noodle dish 3" },
 ];
 
 const Bento = () => {
   return (
-    <div className="columns-2 sm:columns-3 md:columns-4 gap-4 space-y-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {images.map((image) => (
-        <img
-          key={image.id} // Use a unique key for each element
-          src={image.src} // Map the src attribute
-          alt={image.alt} // Map the alt attribute
-          width={300}
-          height={300}
-          className="rounded-3xl w-full"
-        />
+        <div
+          key={image.id}
+          className="aspect-square overflow-hidden rounded-3xl"
+        >
+          <img
+            src={image.src}
+            alt={image.alt}
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+          />
+        </div>
       ))}
     </div>
   );
